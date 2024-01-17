@@ -1,24 +1,13 @@
-const age = parseInt(prompt("How old are you"));
+//array형식으로 검색됨
+const title = document.querySelector("div.hello:first-child");
 
-
-if(isNaN(age)) {
-    console.log("please write a number");
+//클릭시 log출력
+function handleTitleClick() {
+    title.style.color = "blue";
+    console.log("title was clicked");
 }
 
-else if (age < 18) {
-    console.log("you are too young");
-}
 
-else if (age >= 18 && age <= 50) {
-    console.log("You can drink");
-}
-
-else if (age >50 && age <=80) {
-    console.log("You should exercise");
-}
-
-else if (age > 90) {
-    console.log("You can do whatever you want");
-}
-
+//특정 이벤트 listen
+title.addEventListener("click",handleTitleClick)
 
