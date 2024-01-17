@@ -1,21 +1,24 @@
-// 게임플레이어 가정
-const playerName ="oyun";
-const playerPoints = 121212;
-const playerHandsome = false;
-const playerFat = "little bit";
+const age = parseInt(prompt("How old are you"));
 
 
-//위 과정처럼 변수로 지정하는 것은 좋지 않음
-//따라서 object 사용
-const player ={
-    name: "oyun",
-    points: 10,
-    handsome : false,
-    fat : "little bit"
-} 
+if(isNaN(age)) {
+    console.log("please write a number");
+}
 
-console.log(player);
-console.log(player.name);
-console.log(player.points);
-console.log(player.handsome);
-console.log(player.fat);
+else if (age < 18) {
+    console.log("you are too young");
+}
+
+else if (age >= 18 && age <= 50) {
+    console.log("You can drink");
+}
+
+else if (age >50 && age <=80) {
+    console.log("You should exercise");
+}
+
+else if (age > 90) {
+    console.log("You can do whatever you want");
+}
+
+
