@@ -1,13 +1,18 @@
 //array형식으로 검색됨
-const title = document.querySelector("div.hello:first-child");
+const h1 = document.querySelector("div.hello:first-child h1");
 
-//클릭시 log출력
+
 function handleTitleClick() {
-    title.style.color = "blue";
-    console.log("title was clicked");
+    //class name 포함 검사
+    h1.classList.toggle("clicked");
+
 }
 
-
 //특정 이벤트 listen
-title.addEventListener("click",handleTitleClick)
+h1.addEventListener("click",handleTitleClick);
+
+
+
+
+
 
