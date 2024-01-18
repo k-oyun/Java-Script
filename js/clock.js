@@ -1,6 +1,7 @@
 const clock = document.querySelector("h2#clock");
 
 function getClock() {
+    //시간 API
     const date = new Date();
 
     //padStart를 이용하여 string 앞에 ( 몇개로 채울지, 뭐로 채울지)
@@ -17,6 +18,7 @@ function getClock() {
 getClock();
 
 // 5초마다 반복
+// 이것을 이용하여 date를 현재 시간으로 인식할 수 있다.
  setInterval(getClock, 1000); 
 
 // 5초 뒤에 실행
